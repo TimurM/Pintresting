@@ -29,4 +29,7 @@ Pintresting::Application.configure do
 
   #Required for Heroku 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  #ImageMagic 
+  Paperclip.options[:command_path] = "/opt/ImageMagick/bin/"
 end
